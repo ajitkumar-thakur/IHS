@@ -1,0 +1,282 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": [],
+  "examples": [
+    [
+      {
+        "IHS Site Id": "IHS_ABE_0005B",
+        "Operator Site Id": "B4072",
+        "NominalLatitude": 7.14442,
+        "NominalLongitude": 3.373759,
+        "NominalAddress": "Shogbamu Close, Obafemi Road, Idi Aba, Abeokuta, Ogun State",
+        "Latitude": 7.14442,
+        "Longitude": 3.373759,
+        "Address": "Shogbamu Close, Obafemi Road, Idi Aba, Abeokuta, Ogun State",
+        "Remarks": "ok",
+        "TowerHeight": 56.0,
+        "Site Type": "GF",
+        "Region": "",
+        "State": "Ogun",
+        "Anchor Tenant": "9 Mobile",
+        "Entity": "IHSN",
+        "Technology": "2G",
+        "Site Configuration": "Indoor",
+        "OrderDate": "01/01/2020",
+        "RFIDate": "10/01/2009",
+        "OnAirDate": "10/01/2009",
+        "CreatedBy": "System - Phase1 - DM",
+        "CreatedDate": "11/23/2019"
+      }
+    ]
+  ],
+  "additionalItems": true,
+  "items": {
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "type": "object",
+        "title": "The first anyOf schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+          {
+            "IHS Site Id": "IHS_ABE_0005B",
+            "Operator Site Id": "B4072",
+            "NominalLatitude": 7.14442,
+            "NominalLongitude": 3.373759,
+            "NominalAddress": "Shogbamu Close, Obafemi Road, Idi Aba, Abeokuta, Ogun State",
+            "Latitude": 7.14442,
+            "Longitude": 3.373759,
+            "Address": "Shogbamu Close, Obafemi Road, Idi Aba, Abeokuta, Ogun State",
+            "Remarks": "ok",
+            "TowerHeight": 56.0,
+            "Site Type": "GF",
+            "Region": "",
+            "State": "Ogun",
+            "Anchor Tenant": "9 Mobile",
+            "Entity": "IHSN",
+            "Technology": "2G",
+            "Site Configuration": "Indoor",
+            "OrderDate": "01/01/2020",
+            "RFIDate": "10/01/2009",
+            "OnAirDate": "10/01/2009",
+            "CreatedBy": "System - Phase1 - DM",
+            "CreatedDate": "11/23/2019"
+          }
+        ],
+        "required": [
+          "IHS Site Id",
+          "Operator Site Id",
+          "NominalLatitude",
+          "NominalLongitude",
+          "NominalAddress",
+          "Latitude",
+          "Longitude",
+          "Address",
+          "Remarks",
+          "TowerHeight",
+          "Site Type",
+          "Region",
+          "State",
+          "Anchor Tenant",
+          "Entity",
+          "Technology",
+          "Site Configuration",
+          "OrderDate",
+          "RFIDate",
+          "OnAirDate",
+          "CreatedBy",
+          "CreatedDate"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "IHS Site Id": {
+            "$id": "#/items/anyOf/0/properties/IHS Site Id",
+            "type": "string",
+            "title": "The IHS Site Id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["IHS_ABE_0005B"]
+          },
+          "Operator Site Id": {
+            "$id": "#/items/anyOf/0/properties/Operator Site Id",
+            "type": "string",
+            "title": "The Operator Site Id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["B4072"]
+          },
+          "NominalLatitude": {
+            "$id": "#/items/anyOf/0/properties/NominalLatitude",
+            "type": "number",
+            "title": "The NominalLatitude schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [7.14442]
+          },
+          "NominalLongitude": {
+            "$id": "#/items/anyOf/0/properties/NominalLongitude",
+            "type": "number",
+            "title": "The NominalLongitude schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [3.373759]
+          },
+          "NominalAddress": {
+            "$id": "#/items/anyOf/0/properties/NominalAddress",
+            "type": "string",
+            "title": "The NominalAddress schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Shogbamu Close, Obafemi Road, Idi Aba, Abeokuta, Ogun State"
+            ]
+          },
+          "Latitude": {
+            "$id": "#/items/anyOf/0/properties/Latitude",
+            "type": "number",
+            "title": "The Latitude schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [7.14442]
+          },
+          "Longitude": {
+            "$id": "#/items/anyOf/0/properties/Longitude",
+            "type": "number",
+            "title": "The Longitude schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [3.373759]
+          },
+          "Address": {
+            "$id": "#/items/anyOf/0/properties/Address",
+            "type": "string",
+            "title": "The Address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Shogbamu Close, Obafemi Road, Idi Aba, Abeokuta, Ogun State"
+            ]
+          },
+          "Remarks": {
+            "$id": "#/items/anyOf/0/properties/Remarks",
+            "type": "string",
+            "title": "The Remarks schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["ok"]
+          },
+          "TowerHeight": {
+            "$id": "#/items/anyOf/0/properties/TowerHeight",
+            "type": "number",
+            "title": "The TowerHeight schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [56.0]
+          },
+          "Site Type": {
+            "$id": "#/items/anyOf/0/properties/Site Type",
+            "type": "string",
+            "title": "The Site Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["GF"]
+          },
+          "Region": {
+            "$id": "#/items/anyOf/0/properties/Region",
+            "type": "string",
+            "title": "The Region schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [""]
+          },
+          "State": {
+            "$id": "#/items/anyOf/0/properties/State",
+            "type": "string",
+            "title": "The State schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["Ogun"]
+          },
+          "Anchor Tenant": {
+            "$id": "#/items/anyOf/0/properties/Anchor Tenant",
+            "type": "string",
+            "title": "The Anchor Tenant schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["9 Mobile"]
+          },
+          "Entity": {
+            "$id": "#/items/anyOf/0/properties/Entity",
+            "type": "string",
+            "title": "The Entity schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["IHSN"]
+          },
+          "Technology": {
+            "$id": "#/items/anyOf/0/properties/Technology",
+            "type": "string",
+            "title": "The Technology schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["2G"]
+          },
+          "Site Configuration": {
+            "$id": "#/items/anyOf/0/properties/Site Configuration",
+            "type": "string",
+            "title": "The Site Configuration schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["Indoor"]
+          },
+          "OrderDate": {
+            "$id": "#/items/anyOf/0/properties/OrderDate",
+            "type": "string",
+            "title": "The OrderDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["01/01/2020"]
+          },
+          "RFIDate": {
+            "$id": "#/items/anyOf/0/properties/RFIDate",
+            "type": "string",
+            "title": "The RFIDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["10/01/2009"]
+          },
+          "OnAirDate": {
+            "$id": "#/items/anyOf/0/properties/OnAirDate",
+            "type": "string",
+            "title": "The OnAirDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["10/01/2009"]
+          },
+          "CreatedBy": {
+            "$id": "#/items/anyOf/0/properties/CreatedBy",
+            "type": "string",
+            "title": "The CreatedBy schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["System - Phase1 - DM"]
+          },
+          "CreatedDate": {
+            "$id": "#/items/anyOf/0/properties/CreatedDate",
+            "type": "string",
+            "title": "The CreatedDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": ["11/23/2019"]
+          }
+        }
+      }
+    ],
+    "$id": "#/items"
+  }
+}

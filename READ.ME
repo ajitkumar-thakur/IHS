@@ -1,0 +1,82 @@
+dotnet CLI Commands
+
+*  Create Empty Solution
+  dotnet new sln -o IHSAzureServiceBusSolution
+
+* Create Empty Console application for Publisher app
+  dotnet new console -o IHS.ASB.PublisherApp
+
+* Create Empty Console application for Subscriber app
+  dotnet new console -o IHS.ASB.SubscriberApp
+
+* Create Empty class library DataAccessLayer
+  dotnet new classlib -o IHS.ASB.DataAccess
+
+* Create Empty Console application Core
+  dotnet new classlib -o IHS.ASB.Core
+
+* Add Publisher app to Solution
+  dotnet sln add "IHS.ASB.PublisherApp\IHS.ASB.PublisherApp.csproj"
+
+* Add Subscriber app to Solution
+  dotnet sln add "IHS.ASB.SubscriberApp\IHS.ASB.SubscriberApp.csproj"
+
+* Add DataAccessLayer class library to Solution
+  dotnet sln add "IHS.ASB.DataAccess\IHS.ASB.DataAccess.csproj"
+
+* Add Core class library to Solution
+  dotnet sln add "IHS.ASB.Core\IHS.ASB.Core.csproj"
+
+* Add DataAccessLayer Reference  to IHS.ASB.Core class library
+  dotnet add reference "..\IHS.ASB.DataAccess\IHS.ASB.DataAccess.csproj"
+
+* Add Core Reference  to IHS.ASB.PublisherApp class library
+  dotnet add reference "..\IHS.ASB.Core\IHS.ASB.Core.csproj"
+
+* Check whether projects are added to Solution
+  dotnet sln list
+
+* Build Solution/Project - go to the appropriate directory
+  dotnet build
+
+* Install Package in PublisherApp & SubscriberApp 
+  dotnet add package Microsoft.Extensions.Hosting
+
+* Install Package in DataAccess project
+  dotnet add package System.Data.SqlClient
+
+* Install Package in Core & Publisher App project
+
+dotnet add package Microsoft.Extensions.Logging
+  dotnet add package Microsoft.Extensions.Configuration
+  dotnet add package Microsoft.Extensions.Configuration.FileExtensions
+  dotnet add package Microsoft.Extensions.Configuration.Json
+  dotnet add package Microsoft.Extensions.Logging.ApplicationInsights
+  dotnet add package Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel
+
+* Serilog libraries
+  dotnet add package Microsoft.Extensions.DependencyInjection
+  dotnet add package Microsoft.Extensions.Logging
+  dotnet add package Serilog
+  dotnet add package Serilog.Extensions.Hosting
+  dotnet add package Serilog.Extensions.Logging
+  dotnet add package Serilog.Sinks.File
+  dotnet add package Serilog.Settings.Configuration
+  dotnet add package Serilog.Enrichers.Environment
+  dotnet add package Serilog.Enrichers.Thread
+  dotnet add package Serilog.Enrichers.Process
+  dotnet add package Microsoft.ApplicationInsights.WorkerService
+  dotnet add package Serilog.Sinks.ApplicationInsights
+
+  JSON SCHEMA
+  App Url: app.quicktype.io
+  Add below libraries in IHS.ASB.Core Project 
+   dotnet add package Newtonsoft.Json.Schema
+
+   "samplingSettings": {
+        "isEnabled": false,
+        "initialSamplingPercentage": 0.0,
+        "minSamplingPercentage": 0.0,
+        "maxSamplingPercentage": 0.0,
+        "excludedTypes": "SQL;Dependency"
+      },
